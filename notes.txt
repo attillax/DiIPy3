@@ -1,0 +1,337 @@
+-1. What’s New in “Dive Into Python 3”
+    -1.1. a.k.a. “the minus level” 
+
+0. Installing Python
+  0.1. Diving In
+  0.2. Which Python Is Right For You?
+  0.3. Installing on Microsoft Windows
+  0.4. Installing on Mac OS X
+  0.5. Installing on Ubuntu Linux
+  0.6. Installing on Other Platforms
+  0.7. Using The Python Shell
+  0.8. Python Editors and IDEs 
+
+1. Your First Python Program
+    1.1. Diving In
+    1.2. Declaring Functions
+        1.2.1. Optional and Named Arguments 
+    1.3. Writing Readable Code
+        1.3.1. Documentation Strings 
+        The import Search Path
+        Everything Is An Object
+            What’s An Object? 
+        Indenting Code
+        Exceptions
+            Catching Import Errors 
+        Unbound Variables
+        Everything is Case-Sensitive
+        Running Scripts
+    1.11. Further Reading 
+
+2 Native Datatypes
+        Diving In
+        Booleans
+        Numbers
+            Coercing Integers To Floats And Vice-Versa
+            Common Numerical Operations
+            Fractions
+            Trigonometry
+            Numbers In A Boolean Context 
+        Lists
+            Creating A List
+            Slicing A List
+            Adding Items To A List
+            Searching For Values In A List
+            Removing Items From A List
+            Removing Items From A List: Bonus Round
+            Lists In A Boolean Context 
+        Tuples
+            Tuples In A Boolean Context
+            Assigning Multiple Values At Once 
+        Sets
+            Creating A Set
+            Modifying A Set
+            Removing Items From A Set
+            Common Set Operations
+            Sets In A Boolean Context 
+        Dictionaries
+            Creating A Dictionary
+            Modifying A Dictionary
+            Mixed-Value Dictionaries
+            Dictionaries In A Boolean Context 
+        None
+            None In A Boolean Context 
+        Further Reading 
+
+Comprehensions
+        Diving In
+        Working With Files And Directories
+            The Current Working Directory
+            Working With Filenames and Directory Names
+            Listing Directories
+            Getting File Metadata
+            Constructing Absolute Pathnames 
+        List Comprehensions
+        Dictionary Comprehensions
+            Other Fun Stuff To Do With Dictionary Comprehensions 
+        Set Comprehensions
+        Further Reading 
+
+Strings
+        Some Boring Stuff You Need To Understand Before You Can Dive In
+        Unicode
+        Diving In
+        Formatting Strings
+            Compound Field Names
+            Format Specifiers 
+        Other Common String Methods
+            Slicing A String 
+        Strings vs. Bytes
+        Postscript: Character Encoding Of Python Source Code
+        Further Reading 
+
+Regular Expressions
+        Diving In
+        Case Study: Street Addresses
+        Case Study: Roman Numerals
+            Checking For Thousands
+            Checking For Hundreds 
+        Using The {n,m} Syntax
+            Checking For Tens And Ones 
+        Verbose Regular Expressions
+        Case study: Parsing Phone Numbers
+        Summary 
+
+Closures & Generators
+        Diving In
+        I Know, Let’s Use Regular Expressions!
+        A List Of Functions
+        A List Of Patterns
+        A File Of Patterns
+        Generators
+            A Fibonacci Generator
+            A Plural Rule Generator 
+        Further Reading 
+
+Classes & Iterators
+        Diving In
+        Defining Classes
+            The __init__() Method 
+        Instantiating Classes
+        Instance Variables
+        A Fibonacci Iterator
+        A Plural Rule Iterator
+        Further Reading 
+
+Advanced Iterators
+        Diving In
+        Finding all occurrences of a pattern
+        Finding the unique items in a sequence
+        Making assertions
+        Generator expressions
+        Calculating Permutations… The Lazy Way!
+        Other Fun Stuff in the itertools Module
+        A New Kind Of String Manipulation
+        Evaluating Arbitrary Strings As Python Expressions
+        Putting It All Together
+        Further Reading 
+
+Unit Testing
+        (Not) Diving In
+        A Single Question
+        “Halt And Catch Fire”
+        More Halting, More Fire
+        And One More Thing…
+        A Pleasing Symmetry
+        More Bad Input 
+
+Refactoring
+        Diving In
+        Handling Changing Requirements
+        Refactoring
+        Summary 
+
+Files
+        Diving In
+        Reading From Text Files
+            Character Encoding Rears Its Ugly Head
+            Stream Objects
+            Reading Data From A Text File
+            Closing Files
+            Closing Files Automatically
+            Reading Data One Line At A Time 
+        Writing to Text Files
+            Character Encoding Again 
+        Binary Files
+        Stream Objects From Non-File Sources
+            Handling Compressed Files 
+        Standard Input, Output, and Error
+            Redirecting Standard Output 
+        Further Reading 
+
+XML
+        Diving In
+        A 5-Minute Crash Course in XML
+        The Structure Of An Atom Feed
+        Parsing XML
+            Elements Are Lists
+            Attributes Are Dictonaries 
+        Searching For Nodes Within An XML Document
+        Going Further With lxml
+        Generating XML
+        Parsing Broken XML
+        Further Reading 
+
+Serializing Python Objects
+        Diving In
+            A Quick Note About The Examples in This Chapter 
+        Saving Data to a Pickle File
+        Loading Data from a Pickle File
+        Pickling Without a File
+        Bytes and Strings Rear Their Ugly Heads Again
+        Debugging Pickle Files
+        Serializing Python Objects to be Read by Other Languages
+        Saving Data to a JSON File
+        Mapping of Python Datatypes to JSON
+        Serializing Datatypes Unsupported by JSON
+        Loading Data from a JSON File
+        Further Reading 
+
+HTTP Web Services
+        Diving In
+        Features of HTTP
+            Caching
+            Last-Modified Checking
+            ETag Checking
+            Compression
+            Redirects 
+        How Not To Fetch Data Over HTTP
+        What’s On The Wire?
+        Introducing httplib2
+            A Short Digression To Explain Why httplib2 Returns Bytes Instead of Strings
+            How httplib2 Handles Caching
+            How httplib2 Handles Last-Modified and ETag Headers
+            How http2lib Handles Compression
+            How httplib2 Handles Redirects 
+        Beyond HTTP GET
+        Beyond HTTP POST
+        Further Reading 
+
+Case Study: Porting chardet to Python 3
+        Diving In
+        What is Character Encoding Auto-Detection?
+            Isn’t That Impossible?
+            Does Such An Algorithm Exist? 
+        Introducing The chardet Module
+            UTF-n With A BOM
+            Escaped Encodings
+            Multi-Byte Encodings
+            Single-Byte Encodings
+            windows-1252 
+        Running 2to3
+        A Short Digression Into Multi-File Modules
+        Fixing What 2to3 Can’t
+            False is invalid syntax
+            No module named constants
+            Name 'file' is not defined
+            Can’t use a string pattern on a bytes-like object
+            Can't convert 'bytes' object to str implicitly
+            Unsupported operand type(s) for +: 'int' and 'bytes'
+            ord() expected string of length 1, but int found
+            Unorderable types: int() >= str()
+            Global name 'reduce' is not defined 
+        Summary 
+
+Packaging Python Libraries
+        Diving In
+        Things Distutils Can’t Do For You
+        Directory Structure
+        Writing Your Setup Script
+        Classifying Your Package
+            Examples of Good Package Classifiers 
+        Specifying Additional Files With A Manifest
+        Checking Your Setup Script for Errors
+        Creating a Source Distribution
+        Creating a Graphical Installer
+            Building Installable Packages for Other Operating Systems 
+        Adding Your Software to The Python Package Index
+        The Many Possible Futures of Python Packaging
+        Further Reading 
+
+Porting Code to Python 3 with 2to3
+        Diving In
+        print statement
+        Unicode string literals
+        unicode() global function
+        long data type
+        <> comparison
+        has_key() dictionary method
+        Dictionary methods that return lists
+        Modules that have been renamed or reorganized
+            http
+            urllib
+            dbm
+            xmlrpc
+            Other modules 
+        Relative imports within a package
+        next() iterator method
+        filter() global function
+        map() global function
+        reduce() global function
+        apply() global function
+        intern() global function
+        exec statement
+        execfile statement
+        repr literals (backticks)
+        try...except statement
+        raise statement
+        throw method on generators
+        xrange() global function
+        raw_input() and input() global functions
+        func_* function attributes
+        xreadlines() I/O method
+        lambda functions that take a tuple instead of multiple parameters
+        Special method attributes
+        __nonzero__ special method
+        Octal literals
+        sys.maxint
+        callable() global function
+        zip() global function
+        StandardError exception
+        types module constants
+        isinstance() global function
+        basestring datatype
+        itertools module
+        sys.exc_type, sys.exc_value, sys.exc_traceback
+        List comprehensions over tuples
+        os.getcwdu() function
+        Metaclasses
+        Matters of style
+            set() literals (explicit)
+            buffer() global function (explicit)
+            Whitespace around commas (explicit)
+            Common idioms (explicit) 
+
+Special Method Names
+        Diving In
+        Basics
+        Classes That Act Like Iterators
+        Computed Attributes
+        Classes That Act Like Functions
+        Classes That Act Like Sets
+        Classes That Act Like Dictionaries
+        Classes That Act Like Numbers
+        Classes That Can Be Compared
+        Classes That Can Be Serialized
+        Classes That Can Be Used in a with Block
+        Really Esoteric Stuff
+        Further Reading 
+
+Where to Go From Here
+        Things to Read
+        Where To Look For Python 3-Compatible Code 
+
+Troubleshooting
+        Diving In
+        Getting to the Command Line
+        Running Python on the command line 
